@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Sign Language Detection</title>
+ </head>  
+  <body>
+    <h1>Sign Language Detection</h1>
+      <div id="liveView" class="camView">
+        <video id="wc" autoplay playsinline muted width="640" height="480"></video>
+    </div>
+    <button type="button" id="startPredicting" onclick="startPredicting()" >Start Predicting</button>
+	<button type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button>
+	<div id="prediction"></div>
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Import the page's JavaScript to do some stuff -->
+	<script src="webcam.js" defer></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>
